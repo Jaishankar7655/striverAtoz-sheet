@@ -1,10 +1,18 @@
 # 🚀 Striver DSA Practice Repository
 
-Hi there, I'm <b>Jaishankar Prasad Jaiswal</b> 👋
+This repository has been organized into topic-based folders so the practice files are easier to read and study.
 
-I’m a passionate <b>Full Stack Developer</b>, <b>DevOps Engineer</b>, and <b>Cloud Enthusiast</b> who enjoys solving real-world problems through scalable applications, automation, and clean code. This repository is my hands-on practice space for <b>Data Structures & Algorithms (DSA)</b>, especially in <b>C++</b>, inspired by the Striver DSA approach.
+## 📚 How to use this repo
+- Start with the notes index: [notes-index.md](notes-index.md)
+- Open the folder README files for topic-wise explanations
+- Read the code file after reading the concept notes
 
-This folder contains multiple C++ practice files focused on key problem-solving topics such as arrays, searching, sorting, two pointers, vectors, reverse operations, and number-based algorithm patterns.
+## 🗂️ Organized folders
+- [01-array-basics](01-array-basics/README.md)
+- [02-array-rotation-and-reversal](02-array-rotation-and-reversal/README.md)
+- [03-searching-sorting-and-math](03-searching-sorting-and-math/README.md)
+- [04-vectors-and-stl](04-vectors-and-stl/README.md)
+- [05-two-pointers-and-subarrays](05-two-pointers-and-subarrays/README.md)
 
 ---
 
