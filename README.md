@@ -1,179 +1,188 @@
-# 🚀 Striver DSA Practice Repository
+# 🧠 DSA Journey — C++ Problem Solving
 
-This repository has been organized into topic-based folders so the practice files are easier to read and study.
+This repository documents my ongoing journey learning Data Structures and Algorithms in C++ — through implementation, debugging, optimization, and repeated problem-solving. It follows the Striver A2Z DSA sheet structure, starting with array fundamentals.
 
-## 📚 How to use this repo
-- Start with the notes index: [notes-index.md](notes-index.md)
-- Open the folder README files for topic-wise explanations
-- Read the code file after reading the concept notes
+All statistics on this page are generated directly from [`data/dsa_progress.csv`](data/dsa_progress.csv) by [`scripts/analyze_dsa.py`](scripts/analyze_dsa.py) — nothing below is hand-typed or estimated.
 
-## 🗂️ Organized folders
-- [01-array-basics](01-array-basics/README.md)
-- [02-array-rotation-and-reversal](02-array-rotation-and-reversal/README.md)
-- [03-searching-sorting-and-math](03-searching-sorting-and-math/README.md)
-- [04-vectors-and-stl](04-vectors-and-stl/README.md)
-- [05-two-pointers-and-subarrays](05-two-pointers-and-subarrays/README.md)
+## 📊 Progress Dashboard
 
----
+| Metric             | Count |
+| ------------------- | ----: |
+| Unique Problems     |    25 |
+| Total Code Attempts |    36 |
+| Solved              |    19 |
+| Attempted (buggy)   |     4 |
+| In Progress         |     1 |
+| Optimization Needed |     1 |
+| Topics Covered      |     6 |
+| Patterns Practiced  |    23 |
 
-## 🧠 About Me
+![DSA Overview](assets/charts/01_overview.png)
 
-I’m someone who loves building end-to-end solutions and continuously improving my technical foundation. My focus is on:
+## ✅ Reality Check
 
-- Full Stack development
-- DevOps and CI/CD workflows
-- Cloud platforms and infrastructure automation
-- Problem solving through DSA
-- Writing efficient and production-ready code
+This repository contains both successful solutions and failed attempts, and this README does not paper over that. Of the 25 unique problems tracked:
 
-I’m currently strengthening my understanding of:
+- **19 are solved** with logic traced and verified by hand (e.g. Next Permutation, Two Sum, Container With Most Water, First Missing Positive).
+- **4 are attempted but currently buggy** — for example, `smallest-element.cpp` has an off-by-one loop bound, and `longest-consecutive.cpp` has a condition (`i == i + 1`) that can never be true, so the function never actually finds a consecutive streak.
+- **1 needs optimization** — Maximum Subarray Sum has a working brute-force version, but the file meant to hold Kadane's Algorithm doesn't implement Kadane's logic (no reset-on-negative), so it doesn't actually give the max subarray sum yet.
+- **1 is still in progress** — Sort Colors / Dutch National Flag has no working attempt yet: one file (`dutch-nation-flag.cpp`) doesn't even compile (duplicate variable declaration, a reference to an undefined variable), and the other has two DNF approaches sitting commented-out and untested.
 
-- Data Structures and Algorithms
-- C++ programming fundamentals
-- Web development stack
-- Deployment and automation practices
+Failed and incomplete implementations are intentionally kept in the repo rather than deleted, because debugging, spotting edge cases, and rewriting inefficient approaches are part of the actual learning process — not just the clean final answers.
 
-My study journey is centered around becoming a well-rounded software engineer who can both build applications and deploy them effectively in real environments.
+A few files also have **misleading names relative to what they actually do** (flagged individually in the tracker table below), most likely from copy-pasting a previous file as a starting point. These are naming issues, not logic issues, and are called out rather than silently corrected.
 
----
+## 📚 Topics Covered
 
-## 📚 DSA & Repository Overview
+- Arrays — 17
+- Arrays / Hashing — 4
+- Arrays / Math — 1
+- Arrays / Bit Manipulation — 1
+- Arrays / Two Pointers — 1
+- Arrays / DP — 1
 
-This repository is a collection of <b>Striver-style practice questions</b> and algorithmic implementations. It includes exercises related to:
+![Topic Distribution](assets/charts/02_topic_distribution.png)
 
-- Arrays and array rotation
-- Reverse operations and loop-based thinking
-- Two-pointer techniques
-- Searching and sorting patterns
-- Vector iteration and traversal
-- Maximum, minimum, and consecutive value problems
-- Missing number and pair-based sum problems
+## 📈 Status Breakdown
 
-### Repository Files
+![Status Distribution](assets/charts/03_status_distribution.png)
 
-- `2.cpp`
-- `2pointerunion.cpp`
-- `kadanesAlgo.cpp`
-- `largest.cpp`
-- `largest2.cpp`
-- `largestconsecutiveones.cpp`
-- `leetcode189.cpp`
-- `leftrotateby3.cpp`
-- `leftrotatebyone.cpp`
-- `linearsearch.cpp`
-- `maxofsunarray.cpp`
-- `missingnumber.cpp`
-- `movezeros.cpp`
-- `movezeroscpp.cpp`
-- `pairs.CPP`
-- `passBYvalue.cpp`
-- `reverloop.cpp`
-- `reverseArray.cpp`
-- `secondLargest.cpp`
-- `smallestNumber.cpp`
-- `sortarray.cpp`
-- `sortedArray.cpp`
-- `sortedArrayOrnot.cpp`
-- `sumoftwovalue.cpp`
-- `vectoritrator.cpp`
-- `vectors.cpp`
+## 🎚️ Difficulty Breakdown
 
-This collection reflects daily problem-solving practice and is a part of my DSA preparation journey.
+Easy: 16 · Medium: 7 · Hard: 2
 
----
+![Difficulty Distribution](assets/charts/04_difficulty_distribution.png)
 
-## 🛠️ Technical Expertise
+## 🔁 Patterns Practiced
 
-### Programming Languages
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=for-the-badge)
-![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge)
-![C++](https://img.shields.io/badge/C++-00599C?logo=c%2B%2B&logoColor=white&style=for-the-badge)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?logo=gnu-bash&logoColor=white&style=for-the-badge)
+| Pattern | Problems |
+| --- | ---: |
+| Two Pointers | 5 |
+| Linear Scan | 3 |
+| Brute Force | 2 |
+| Set | 2 |
+| Hashing / Hash Map | 2 |
+| Boyer-Moore Voting | 1 |
+| Kadane's Algorithm | 1 |
+| XOR | 1 |
+| Reversal Algorithm | 1 |
+| Stable Partition | 1 |
+| Pivot Search + Suffix Reversal | 1 |
+| Three-Way Partitioning | 1 |
+| Sorting-based Scan | 1 |
+| One-Pass Greedy | 1 |
+| Sum Formula | 1 |
+| ...and 7 more single-occurrence patterns | — |
 
-### Frontend Development
-![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB&style=for-the-badge)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=for-the-badge)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white&style=for-the-badge)
-![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwind-css&logoColor=white&style=for-the-badge)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white&style=for-the-badge)
-![GSAP](https://img.shields.io/badge/GSAP-88CE02?logo=greensock&logoColor=white&style=for-the-badge)
+![Pattern Distribution](assets/charts/05_pattern_distribution.png)
 
-### Backend Development
-![Django](https://img.shields.io/badge/Django-092E20?logo=django&logoColor=white&style=for-the-badge)
-![REST API](https://img.shields.io/badge/REST_API-009688?logo=fastapi&logoColor=white&style=for-the-badge)
-![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white&style=for-the-badge)
+## 🔄 Attempts vs. Unique Problems
 
-### Database Technologies
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white&style=for-the-badge)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white&style=for-the-badge)
+25 unique problems produced 36 total coding attempts — meaning roughly 44% of problems were revisited at least once (bug fix, brute-force → optimal, or a second independent attempt). This is not inflation; it's shown explicitly so attempt count is never confused with solved count.
 
-### Cloud & Infrastructure
-![AWS](https://img.shields.io/badge/AWS-232F3E?logo=amazon-aws&logoColor=FF9900&style=for-the-badge)
-![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black&style=for-the-badge)
-![Red Hat](https://img.shields.io/badge/Red_Hat-EE0000?logo=redhat&logoColor=white&style=for-the-badge)
-![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?logo=ubuntu&logoColor=white&style=for-the-badge)
+![Attempts vs Unique Problems](assets/charts/06_attempts_vs_solved.png)
 
-### DevOps & CI/CD
-![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white&style=for-the-badge)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=white&style=for-the-badge)
-![Jenkins](https://img.shields.io/badge/Jenkins-D24939?logo=jenkins&logoColor=white&style=for-the-badge)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=github-actions&logoColor=white&style=for-the-badge)
-![ArgoCD](https://img.shields.io/badge/ArgoCD-EF7B4D?logo=argo&logoColor=white&style=for-the-badge)
-![Terraform](https://img.shields.io/badge/Terraform-7B42BC?logo=terraform&logoColor=white&style=for-the-badge)
-![Ansible](https://img.shields.io/badge/Ansible-EE0000?logo=ansible&logoColor=white&style=for-the-badge)
+## ⏱️ Progress Timeline
 
-### Version Control & Collaboration
-![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white&style=for-the-badge)
-![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white&style=for-the-badge)
-![GitLab](https://img.shields.io/badge/GitLab-FC6D26?logo=gitlab&logoColor=white&style=for-the-badge)
+Progress timeline unavailable because reliable historical dates were not found. The repository's Git history only contains 7 commits spanning 3 distinct dates (2026-07-22, 2026-07-25, 2026-08-08), which isn't enough to build a meaningful monthly trend without guessing.
 
-### Development Tools
-![VS Code](https://img.shields.io/badge/VS_Code-0078D4?logo=visual-studio-code&logoColor=white&style=for-the-badge)
-![Vim](https://img.shields.io/badge/Vim-019733?logo=vim&logoColor=white&style=for-the-badge)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?logo=postman&logoColor=white&style=for-the-badge)
+## 🔍 What the Data Shows
 
----
+- **Arrays dominate the practice so far** (17 of 25 problems), with array + hashing combinations (union, duplicates, longest consecutive) forming the next-largest group — consistent with this being the start of the A2Z sheet.
+- **Two Pointers is the most-practiced pattern** (5 occurrences) — rotation, reversal, union, and container-with-water problems all lean on it, and the two-pointer union attempt in particular shows it's still being debugged (see Reality Check).
+- **Repeated attempts cluster around genuinely tricky logic**, not random problems: rotation-by-K (reversal boundaries), majority element (Boyer-Moore's return + verification step), and Sort Colors/DNF (3-way partition invariants) are exactly the kind of problems where a first pass commonly has an off-by-one or missing step — the data backs that up rather than contradicting it.
+- **Hard-difficulty problems (First Missing Positive, Longest Consecutive Sequence) are a 50/50 split** — one solved cleanly, one still buggy — suggesting hashing/in-place tricks at Hard level are the current growth edge, not Medium-level two-pointer work which is mostly solved.
+- There isn't yet enough data to say anything reliable about non-array topics (strings, linked lists, trees, DP, graphs) — they simply haven't been attempted in this repository yet.
 
-## 🎯 Core Competencies
+## 🎯 Current Focus
 
-- Full Stack Development
-- Cloud Architecture
-- CI/CD Pipelines
-- Container Orchestration
-- GitOps
-- Infrastructure as Code
-- API Development
-- Performance Optimization
+Based on the most recent commit (2026-08-08) and the newest files in the repo:
 
----
+- Array edge cases and off-by-one loop bounds
+- Hashing-based array problems (duplicates, longest consecutive sequence)
+- Two-pointer correctness (container with water, union of arrays)
+- Fixing broken in-progress attempts (Sort Colors / DNF) rather than starting new topics
 
-## 🌐 Social Media & Contact
+## 🚀 Next Targets
 
-Let’s connect and collaborate on meaningful projects:
+Realistic next steps based on gaps in the current dataset — not claims of completion:
 
-- LinkedIn: [Jaishankar Jaiswal](https://www.linkedin.com/in/jaishankar-jaiswal-14253926b)
+1. Finish Sort Colors / Dutch National Flag (currently 2 commented approaches + 1 non-compiling attempt, none working)
+2. Fix the 4 currently-buggy "Attempted" problems (Smallest Element, Majority Element, Reverse Array, Longest Consecutive Sequence)
+3. Implement a correct version of Kadane's Algorithm (the optimized file doesn't currently do what its name says)
+4. Move beyond Arrays into Strings and Linked Lists, per the A2Z sheet order
+5. Start Binary Search and Sliding Window, which don't appear anywhere in the repo yet
+
+## 🛠️ Technologies Used
+
+- C++ (STL: `vector`, `set`, `map`, `unordered_map`, `pair`)
+- VS Code
+- Git / GitHub
+- Python, Pandas, Matplotlib (for the analytics in this README)
+
+## 📁 Repository Structure
+
+```
+striverAtoz-sheet/
+├── 01-array-basics/
+├── 02-array-rotation-and-reversal/
+├── 03-searching-sorting-and-math/
+├── 04-vectors-and-stl/
+├── 05-two-pointers-and-subarrays/
+├── data/
+│   ├── dsa_progress.csv          # source of truth for every stat on this page
+│   └── stl_practice_files.csv    # STL/language demos, excluded from DSA stats
+├── scripts/
+│   └── analyze_dsa.py            # regenerates all charts from the CSV
+├── assets/
+│   └── charts/                   # 6 generated charts, embedded above
+├── *.cpp                         # root-level problems added most recently
+└── README.md
+```
+
+## 📋 Problem Tracker
+
+| # | Problem | Topic | Pattern | Difficulty | Status | Attempts |
+| - | ------- | ----- | ------- | ---------- | ------ | -------- |
+| P01 | Find Largest Element in Array | Arrays | Linear Scan | Easy | Solved | 2 |
+| P02 | Find Second Largest Element | Arrays | Two-Pass Linear Scan | Easy | Solved | 1 |
+| P03 | Find Smallest Element in Array | Arrays | Linear Scan | Easy | Attempted | 1 |
+| P04 | Missing Number | Arrays / Math | Sum Formula | Easy | Solved | 1 |
+| P05 | Majority Element (> n/2 times) | Arrays | Boyer-Moore Voting | Medium | Attempted | 2 |
+| P06 | Maximum Subarray Sum (Kadane's Algorithm) | Arrays | Brute Force + Kadane's Algorithm | Medium | Optimization Needed | 2 |
+| P07 | Single Number (Find Unique Element via XOR) | Arrays / Bit Manipulation | XOR | Easy | Solved | 1 |
+| P08 | Rotate Array Left by One | Arrays | In-place Shift | Easy | Solved | 1 |
+| P09 | Rotate Array by K Places [(LC 189)](https://leetcode.com/problems/rotate-array/) | Arrays | Reversal Algorithm | Medium | Solved | 2 |
+| P10 | Reverse an Array | Arrays | Two Pointers | Easy | Attempted | 2 |
+| P11 | Move Zeroes to End [(LC 283)](https://leetcode.com/problems/move-zeroes/) | Arrays | Two Pointers / Stable Partition | Easy | Solved | 1 |
+| P12 | Union of Two Sorted Arrays | Arrays | Two Pointers / Hashing | Easy | Solved | 2 |
+| P13 | Rearrange Array Elements by Sign [(LC 2149)](https://leetcode.com/problems/rearrange-array-elements-by-sign/) | Arrays | Two Pointers / Extra Array | Medium | Solved | 1 |
+| P14 | Linear Search | Arrays | Linear Search | Easy | Solved | 1 |
+| P15 | Check if Array is Sorted | Arrays | Linear Scan | Easy | Solved | 1 |
+| P16 | Remove Duplicates from Array | Arrays / Hashing | Set | Easy | Solved | 1 |
+| P17 | Two Sum [(LC 1)](https://leetcode.com/problems/two-sum/) | Arrays / Hashing | Two Pointers on Sorted Pairs | Easy | Solved | 1 |
+| P18 | Next Permutation [(LC 31)](https://leetcode.com/problems/next-permutation/) | Arrays | Pivot Search + Suffix Reversal | Medium | Solved | 1 |
+| P19 | Sort Colors / Dutch National Flag [(LC 75)](https://leetcode.com/problems/sort-colors/) | Arrays | Three-Way Partitioning | Medium | In Progress | 3 |
+| P20 | Container With Most Water [(LC 11)](https://leetcode.com/problems/container-with-most-water/) | Arrays / Two Pointers | Two Pointers | Medium | Solved | 2 |
+| P21 | First Missing Positive [(LC 41)](https://leetcode.com/problems/first-missing-positive/) | Arrays | Sorting-based Scan | Hard | Solved | 1 |
+| P22 | Find All Duplicates in Array | Arrays / Hashing | Hash Map | Easy | Solved | 1 |
+| P23 | Longest Consecutive Sequence [(LC 128)](https://leetcode.com/problems/longest-consecutive-sequence/) | Arrays / Hashing | Set | Hard | Attempted | 2 |
+| P24 | Leaders in an Array | Arrays | Right-to-Left Scan / Brute Force | Easy | Solved | 2 |
+| P25 | Best Time to Buy and Sell Stock [(LC 121)](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Arrays / DP | One-Pass Greedy | Easy | Solved | 1 |
+
+> Full per-file notes (what's wrong, what's correct, why a status was assigned) are in [`data/dsa_progress.csv`](data/dsa_progress.csv). 5 STL/language-practice files (`vector` basics, `pair` demos, iterators, pass-by-reference) are tracked separately in [`data/stl_practice_files.csv`](data/stl_practice_files.csv) and excluded from the problem stats above since they aren't DSA problems.
+
+## 🔬 Regenerating These Stats
+
+```bash
+pip install pandas matplotlib
+python3 scripts/analyze_dsa.py
+```
+
+This reads `data/dsa_progress.csv`, prints a summary to the console, and rewrites every chart in `assets/charts/`. Update the CSV as problems get fixed or added, then re-run the script — the README's numbers should be manually synced to match afterward.
+
+## 🌐 Connect
+
 - GitHub: [Jaishankar7655](https://github.com/Jaishankar7655)
+- LinkedIn: [Jaishankar Jaiswal](https://www.linkedin.com/in/jaishankar-jaiswal-14253926b)
 - Portfolio: [CodeForMe](https://codeformme.netlify.app/)
-- Email: [jaishankar7655@gmail.com](mailto:jaishankar7655@gmail.com)
-
----
-
-## 📊 GitHub Statistics
-
-<div align="center">
-
-![Jaishankar's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Jaishankar7655&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF&text_color=C9D1D9)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Jaishankar7655&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9)
-
-![GitHub Streak](https://streak-stats.demolab.com/?user=Jaishankar7655&theme=radical&hide_border=true&background=0D1117&stroke=58A6FF&ring=58A6FF&fire=58A6FF&currStreakLabel=C9D1D9)
-
-</div>
-
----
-
-## 💬 Final Note
-
-This repository is not just a set of files — it is a reflection of consistent learning, coding discipline, and the journey toward becoming a strong problem solver and software engineer.
-
-> Building scalable solutions, one commit at a time.
